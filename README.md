@@ -1,1 +1,2 @@
-# First stage of building a website using Ruby and hosting it on Github.
+# 
+First stage of building a website using Ruby and hosting it on Github.
