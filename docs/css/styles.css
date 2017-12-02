@@ -1,12 +1,12 @@
 body {background-color: #323366;}
-h1, h2 {font-family: arial; color: #eeeeee; text-transform: uppercase; letter-spacing: 0.2em;
+h1 {font-family: arial; color: #eeeeee; text-transform: uppercase; letter-spacing: 0.2em;
 background-color: #dd6733;
 padding: 10px;
 border: 2px; border-style: solid; #00dddd;
 width: 75%;
 margin: 50px;}
-p.column1 {font-family: courier; color: #000000;
-background-color: #eeeeee;
+p.column1 {font-family: arial; color: #eeeeee; text-transform: uppercase;
+background-color: #dd6733;
 padding: 10px;
 border: 2px; border-style: solid; #00dddd;
 width: 45%;
