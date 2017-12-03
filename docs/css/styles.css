@@ -6,51 +6,73 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #343434;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: #141414;}
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: #4caf50;}
 
-ul.topnav li.right {float: right;}
+ul.topnav li a.mail {background-color: #ff0000;}
 
 @media screen and (max-width: 600px){
-    ul.topnav li.right,
+    ul.topnav li a.mail,
     ul.topnav li {float: none;}
 }
+
 h1 {font-family: sans-serif; color: #dddddd; margin: 50px;}
 h2 {font-family: sans-serif; color: #450066; margin: 20px;}
-#box {width: 90%;
-	margin: 20px;
-background-color: #bbddee;
-padding: 10px;
-border-radius: 4em 1em 4em 1em / 2em 1em 2em 1em;
--moz-border-radius: 4em 1em 4em 1em;
--webkit-border-radius: 1em 4em 1em 4em/ 2em 1em 2em 1em;}
-#text {margin: 20px;}
+
 
 div.gallery {
-	padding: 10px;
+	padding: 10px 40px;
     align: middle;
 	  width: auto;
     height: auto;}
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 0px;
 }
 
 div.gallery img {
     width: 100px;
     height: 100px;
 }
+
+#box {width: 90%;
+margin: 20px;
+padding: 10px;
+background-color: #bbddee;
+border-radius: 4em 1em 4em 1em / 2em 1em 2em 1em;
+-moz-border-radius: 4em 1em 4em 1em;
+-webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;}
+
+#script {font-family: monospace;
+width: 50%;
+margin: 10px;
+padding: 10px;
+background-color: #11efef;
+border-radius: 4em 2em 4em 2em / 2em 4em 2em 4em;
+-moz-border-radius: 4em 1em 4em 1em;
+-webkit-border-radius: 1em 4em 1em 4em/ 2em 1em 2em 1em;}
+
+#gallery {font-family: serif;
+width: 50%;
+margin: 10px;
+padding: 10px;
+background-color: #e3e3e3;
+border-radius: 2em 2em 3em 4em / 2em 2em 3em 4em;
+-moz-border-radius: 1em 2em 2em 4em;
+-webkit-border-radius: 1em 2em 3em 2em/ 1em 2em 3em 2em;}
+
+#text {margin: 10px 20px;}
