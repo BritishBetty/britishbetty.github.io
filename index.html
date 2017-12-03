@@ -22,6 +22,7 @@ content="building a GitHub-hosted website using HTML, CSS, Ruby and other progra
   <li><a href="about.html">About</a></li>
   <li><a href="archives.html">Archives</a></li>
     <li><a href="random.html">Random</a></li>
+    <li><a class="mail" href="https://twitter.com/BritishBetty1">@BritishBetty</a></li>
   </ul>
 
 <h1>
@@ -31,6 +32,7 @@ BRITISH BETTY'S BLOG
 <h2>DECEMBER 3rd 2017 #2</h2>
 <div id="text">
 <b>A Simple Gallery</b><br><br>
+<div id="gallery">
   <div class="gallery">
     <a target="_blank" href="docs/images/landscape01.jpg">
       <img src="docs/images/landscape01.jpg" alt="river landscape"></a>
@@ -40,7 +42,8 @@ BRITISH BETTY'S BLOG
         <img src="docs/images/landscape03.jpg" alt="mountain landscape"></a>
       <a target="_blank" href="docs/images/landscape04.jpg">
         <img src="docs/images/landscape04.jpg" alt="chalet landscape"></a>
-    </div>
+    </div class="gallery">
+  </div id="gallery">
       <br><br>
       This is a very simple static gallery that uses HTML and CSS to display named images drawn from a folder
       hosted by Github.
@@ -50,6 +53,27 @@ BRITISH BETTY'S BLOG
       the free web hosting service - and I have 100GB of storage on services like <b>Box</b> and <b>Mega</b> which I want to use
       to store media (images, movies, audio, documents etc) for use in this project.
 <br><br>
+This is the CSS code for the gallery (use <em>div class equals gallery</em> in the HTML):<br><br>
+<div id="script">
+<blockquote>
+  div.gallery {<br>
+  	padding: 10px;<br>
+      align: middle;<br>
+  	  width: auto;<br>
+      height: auto;}<br>
+<br>
+  div.gallery:hover {<br>
+      border: 0px;<br>
+  }<br>
+  <br>
+  div.gallery img {<br>
+      width: 100px;<br>
+      height: 100px;<br>
+  }<br>
+</blockquote>
+</div id="script">
+<br>
+If you prefer a reactive screen on 'hover' then change the border to something bigger than zero pixels. <br><br>
 </div id="text">
 </div id="box">
 
@@ -59,9 +83,23 @@ BRITISH BETTY'S BLOG
 Added some css styling to the basic website. The layout should now adjust to display on different sized screens (laptop, tablet, phone).
 And each post now has its own little 'bubble'.
 <br><br>
+This is the CSS for the curved bubbles. I rather like the effect. It stops everything looking too square.
+Use <em>div id equals box</em> when adding to HTML.<br><br>
+<div id="script">
+<blockquote>
+  #box {width: 90%;<br>
+  margin: 20px;<br>
+  background-color: #11efef;<br>
+  padding: 10px;<br>
+  border-radius: 4em 1em 4em 1em / 2em 1em 2em 1em;<br>
+  -moz-border-radius: 4em 1em 4em 1em;<br>
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;}
+</blockquote>
+</div id="script">
+<br>
 Still writing everything manually via <b>Atom</b>.
 <br><br>
-Next project will be to do some simple scripts.
+Next project will be to do some simple interactive scripts.
 <br><br>
 </div id="text">
 </div id="box">
@@ -70,16 +108,38 @@ Next project will be to do some simple scripts.
 <div id="text">
 I recently retired. I am new to programming. I am interested in learning IT skills as a hobby and to keep my mind active. Use it or lose it!
 <br><br>
-I have Windows, Apple, Android (open source and propriatory) and Ubuntu portable devices. I like flashing different open source operating systems onto them but apart from this I only use them to consume content.
-I prefer to do creative projects that involve a lot of screen-time and/or typing sitting in a proper office chair, at a desk. My laptop runs Linux Mint so my long-term ambition it to learn to programme in Linux Mint.
+I have Windows, Apple, Android (open source and propriatory), Firefox, Sailfish, and Ubuntu portable devices. <br><br>
+I buy second-hand items and play with them. I like taking the
+hardware apart and putting it together again - I have always done that with technology, ever since I was a little girl. I think I should have been an engineer. Hands-on is how I learn best. <br><br>
+I also like flashing different open source operating systems onto my devices (yes, I have bricked a few)
+ but apart from this I only use them to consume content.<br><br>
+I prefer to do creative projects that involve a lot of screen-time (e.g. editing photographs or video footage) and/or typing (e.g. writing a report) sitting in a proper office chair, at a desk.
+My laptop runs Linux Mint so my long-term ambition it to learn to programme in Linux Mint.
 My short-term aim is to find resources to teach myself programming that are open source, free, and can be installed on my Linux Mint laptop.
 <br><br>
 I looked online for advice about which programming language I should start with. I decided to try teaching myself to use <b>Ruby</b> and work up to using other languages.<br><br>
 Today, I made my first attempt to use <b>GitHub</b> to build (using HTML and CSS) and host a simple website. Once I have a basic website, I will try to use Ruby to add features to it.
 <br><br>
+Github provides a tutorial to get newbies started and it is quite good but it leaves out many essential things. For example, it shows you how to create files but not how to create folders. This omission shows the
+beginner's guide was not written by a beginner but by someone who understands Github inside-out and thus has a blind-spot about the basics, assuming knowledge
+instead of imparting it. <br><br>
+<div id="script">
+<blockquote>
+If you are wondering, you create folders on Github by typing them into the same box used to create files - for example, to create a folder called <em>colours</em> with a text file inside called
+<em>red.txt</em> all you do is type <em>/colours/red.txt</em> and Github will create the folder and file for you. It cannot
+create empty folders so create a dummy file and save it to make a folder and then delete the dummy file when no
+longer required.
+<br><br>
+<div id="text">
+<a target="_blank" href="docs/images/github001.png">
+  <img src="docs/images/github001.png" alt="github screenshot" width="400" height="200" align="center"></a>
+  </div id="text">
+</blockquote>
+</div id="script">
+<br><br>
 I tried the various <em>WYSIWYG</em> website builders compatible with Linux Mint like <b>Jekyll</b> and could not make any progress with them.<br><br>
 I tried <b>Github Pages</b> and drew another blank.<br><br>
-I then downloaded and installed the <b>Atom</b> editor for Linux distros and just typed the codes manually and then uploaded them to my GitHub
+I then downloaded and installed the <b>Atom</b> editor for Linux distros and just typed the codes manually and then uploaded them to my Github
 repository. And this website is the result.
 <br><br>
 I suspect that the terminal-driven short-cuts like Jekyll are only useful if you are already quite skilled. They are promoted for newbies but
