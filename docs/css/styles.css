@@ -1,13 +1,56 @@
-body {background-color: #323366;}
-h1 {font-family: arial; color: #eeeeee; text-transform: uppercase; letter-spacing: 0.2em;
-background-color: #dd6733;
+body {background-color: #5656aa;
+margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+h1 {font-family: sans-serif; color: #dddddd; margin: 50px;}
+h2 {font-family: sans-serif; color: #450066; margin: 20px;}
+#box {width: 90%;
+	margin: 20px;
+background-color: #bbddee;
 padding: 10px;
-border: 2px; border-style: solid; #00dddd;
-width: 75%;
-margin: 50px;}
-p.column1 {font-family: arial; color: #eeeeee; text-transform: uppercase;
-background-color: #dd6733;
-padding: 10px;
-border: 2px; border-style: solid; #00dddd;
-width: 45%;
-margin: 50px;}
+border-radius: 4em 1em 4em 1em / 2em 1em 2em 1em;
+-moz-border-radius: 4em 1em 4em 1em;
+-webkit-border-radius: 1em 4em 1em 4em/ 2em 1em 2em 1em;}
+#text {margin: 20px;}
+
+div.gallery {
+	padding: 10px;
+    align: middle;
+	  width: auto;
+    height: auto;}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100px;
+    height: 100px;
+}
